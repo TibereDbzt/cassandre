@@ -5,8 +5,8 @@
 		"node": "16.9.1"
 	},
 	"scripts": {
-		"backend:build": "node server.js",
-		"backend:development": "nodemon server.js",
+		"backend:build": "node index.js",
+		"backend:development": "nodemon index.js",
 		"frontend:build": "webpack --progress --config webpack.config.build.js",
 		"frontend:development": "webpack serve --progress --config webpack.config.development.js",
 		"dev": "concurrently --kill-others \"npm run backend:development\" \"npm run frontend:development\""
